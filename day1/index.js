@@ -33,7 +33,8 @@ for(let i = 0;i<keysArray.length;i++) {
     audioKey.src = `./assets/sounds/${keysArray[i].name}.wav`;
     body.append(audioKey);
     divKey.addEventListener("click" ,()=> {
-        audioKey.classList.add("playing");
+        divKey.classList.add("playing");
         audioKey.play();
     })
+    divKey.classList.remove("playing");
 }
