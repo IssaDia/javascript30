@@ -36,7 +36,6 @@ for(let i = 0;i<keysArray.length;i++) {
         divKey.classList.add("playing");
         audioKey.play();
     })
-
     const removeTransition = (e) => {
         if(e.propertyName !== 'transform') return;
         this.classList.remove("playing");
